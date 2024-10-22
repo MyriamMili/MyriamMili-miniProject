@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #fdfdff;
+  margin: 0;
+}
+header {
+  margin: 2rem;
+}
+a {
+  text-decoration: none;
+  color: #fdfdff;
+}
+main {
+  display: flex;
+  margin: 2rem;
+}
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  /* line-height: 7rem; */
+  color: #303c4e;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 2.5rem;
+  width: 40rem;
+}
+#content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+#contentnav {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+}
+#navmenu nav {
+  margin-right: 2rem;
+}
+#navmenu ul {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 3rem;
+}
+
+#navmenu li {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  list-style-type: none;
+}
+
+#navmenu li a {
+  color: #303c4e;
+  text-decoration: none;
+}
+
+#navmenu li a:hover {
+  color: #7fdbbb;
+
+  cursor: pointer;
+}
+
+.logo {
+  margin-left: 0.3rem;
+  margin-bottom: 1rem;
+  height: 13vh;
+  cursor: pointer;
+}
+
+#footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 3rem;
+  background-color: white;
+  border-top: 1px solid #eee;
+}
+
+#contacts {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+#phone,
+#address {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#phone i,
+#address i {
+  color: #7fdbbb;
+  font-size: 1.5rem;
+}
+
+#phone span {
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.phone-number {
+  color: #303c4e;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.phone-number:hover {
+  color: #7fdbbb;
+}
+
+address {
+  font-style: normal;
+  color: #303c4e;
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  main {
+    width: 95%;
+    flex-direction: column;
+  }
+
+  #contentnav {
+    padding-top: 2rem;
+  }
+
+  #navmenu ul {
+    gap: 2rem;
+  }
+
+  #navmenu li {
+    font-size: 1.5rem;
+  }
+
+  .logo {
+    margin-left: 2rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  h2 {
+    width: auto;
+    text-align: center;
+  }
+
+  .header-image {
+    height: auto;
+    max-width: 100%;
+  }
+}
